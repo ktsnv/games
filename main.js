@@ -7,6 +7,8 @@ function preload() {
 function setup() {
   for(const element of repos)
   {
-    element
+    let p = document.createElement("p");
+    p.innerHTML = element.name;
+    container.append(p);
   }
 }
